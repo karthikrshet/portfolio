@@ -716,41 +716,37 @@
             </div>
           </div>
 
-          <form action="" class="contact__form grid">
-            <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="" class="content__label">Name</label>
-                <input type="text" class="contact__input" />
-              </div>
+         <form class="contact__form grid" id="contactForm">
+  <div class="contact__inputs grid">
+    <div class="contact__content">
+      <label class="content__label">Name</label>
+      <input type="text" id="name" class="contact__input" required />
+    </div>
 
-              <div class="contact__content">
-                <label for="" class="content__label">Email</label>
-                <input type="Email" class="contact__input" />
-              </div>
-            </div>
+    <div class="contact__content">
+      <label class="content__label">Email</label>
+      <input type="email" id="email" class="contact__input" required />
+    </div>
+  </div>
 
-            <div class="contact__content">
-              <label for="" class="content__label">Message</label>
-              <textarea
-                name=""
-                id=""
-                cols="0"
-                rows="7"
-                class="contact__input"
-              ></textarea>
-            </div>
+  <div class="contact__content">
+    <label class="content__label">Message</label>
+    <textarea
+      id="message"
+      rows="7"
+      class="contact__input"
+      required
+    ></textarea>
+  </div>
 
-            <div>
-              <a
-                href=" mailto: kartikrshet@gmail.com?subject=Testing out mailto! &body=This is only a test!"
-                class="button button--flex"
-              >
-                Send Message
-                <i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
-          </form>
-        </div>
+  <div>
+    <button type="submit" class="button button--flex">
+      Send Message
+      <i class="uil uil-message button__icon"></i>
+    </button>
+  </div>
+</form>
+
       </section>
     </main>
     <footer class="footer">
